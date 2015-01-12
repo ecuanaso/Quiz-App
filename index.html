@@ -29,7 +29,7 @@
 		</style>
 	</head>
 
-	<body onload="script();">
+	<body>
 
 		<div class="container">
 			<h1>Movie trivia</h1>
@@ -42,6 +42,7 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>
+		$(window).load(function(){ 
 				var score = 0;
 
 				var guess = prompt('Who was the main character in the movie Thor?\n1. Brad Pitt\n2. Chris Hemsworth\n3. Tom Cruz\n4. Will Smith', 'Type in number that corresponds with selection');
@@ -95,7 +96,7 @@
 					}  else {
 					    alert('Your score is ' + score + ' out of 5\nYou did a good job\n You\'re on your way to becoming a movie buff');
 					  }
-
+			}) 
 		</script>
 	</body>
 </html>
