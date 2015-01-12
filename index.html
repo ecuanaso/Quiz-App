@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Movie trivia</title>
+		<style>
+			body {
+			    background: #ccc;
+			}
+			.container {
+			    width: 960px;
+			    margin:0 auto;
+			    height:100%;
+			}
+
+			h1 {
+				text-align: center;
+				font-family: helvetica;
+				color: #161616;
+			}
+
+			.cover {
+				width:100%;
+				background-image:url('https://anightsatthemovies.files.wordpress.com/2012/03/collage.jpg');
+				background-repeat:no-repeat;
+				height:600px;
+				background-size: 100% 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<h1>Movie trivia</h1>
+			<section class="cover">
+			</section>
+     
+      
+    	</div>
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+				var score = 0;
+
+				var guess = prompt('Who was the main character in the movie Thor?\n1. Brad Pitt\n2. Chris Hemsworth\n3. Tom Cruz\n4. Will Smith', 'Type in number that corresponds with selection');
+
+				if (guess == '2') {
+				    alert('Correct!')
+				    score = score + 1
+				} else {
+				    alert('Incorrect')
+				}
+
+				guess = prompt('Who was the first actor who played James Bond?\n1. Clint Eastwood\n2. Rodney Dangerfield\n3. Tom Hanks\n4. Sean Connery', 'Type in number that corresponds with selection' )
+
+				if (guess == '4') {
+				    alert('Correct!');
+				    score = score + 1;
+				} else {
+				    alert('Incorrect!')
+				}
+
+				guess = prompt('Who played Selena in the Selena movie ?\n1. Angie Martinez\n2. Jennifer Lopez\n3. Reese Witherspoon\n4. Whoopi Goldberg', 'Type in number that corresponds with selection')
+
+				if (guess == '2') {
+				    alert('Correct!');
+				    score = score + 1;
+				} else {
+				    alert('Incorrect!');
+				}
+
+				guess = prompt('In Matilda what was the name of Matilda\'s teacher?')
+
+				if (guess == 'truchbull') {
+				    alert('Correct!');
+				    score = score + 1;
+				} else {
+				    alert('Incorrect!');
+				}
+
+				guess = prompt('In Independence Day, What does Will Smith yell as he blasts off in the space ship?\n1. I gotta get me one of these!\n2. Man, this thing rocks!\n3. Wow, brothers aren\'t supposed to go to space', 'Type in number that corresponds with selection')
+
+				if (guess == '1') {
+				    alert('Correct!');
+				    score = score + 1;
+				} else {
+				    alert('Incorrect!');
+				}
+				/*** FINAL TALLY OF SCORE ***/
+
+				if ( score < 2 ){
+					alert('Your score is ' + score + ' out of 5\nHey you have to watch more movies!')
+					}  else {
+					    alert('Your score is ' + score + ' out of 5\nYou did a good job\n You\'re on your way to becoming a movie buff');
+					  }
+
+		</script>
+	</body>
+</html>
